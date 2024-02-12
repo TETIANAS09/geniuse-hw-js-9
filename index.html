@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" href="file.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <button type="button" class="btn1">
+          <div id="text" class="text">click me</div>
+        </button>
+        <button type="button" class="btn2">
+          <div id="text" class="text">press here</div>
+        </button>
+      </div>
+      <div id="tree" class="tree">
+        <div class="parent" onclick="toggleChildren(event)">Father1</div>
+        <ul class="children">
+          <li>Child 1</li>
+          <li>Child 2</li>
+          <li>Child 3</li>
+        </ul>
+        <div class="parent" onclick="toggleChildren(event)">Father2</div>
+        <ul class="children">
+          <li>Child 2.1</li>
+          <li>Child 2.2</li>
+          <li>Child 2.3</li>
+        </ul>
+        <div class="parent" onclick="toggleChildren(event)">Father3</div>
+        <ul class="children">
+          <li>Child 3.1</li>
+          <li>Child 3.2</li>
+          <li>Child 3.3</li>
+        </ul>
+        <div class="parent" onclick="toggleChildren(event)">Father4</div>
+        <ul class="children">
+          <li>Child 4.1</li>
+          <li>Child 4.2</li>
+          <li>Child 4.3</li>
+        </ul>
+      </div>
+    </div>
+    <script src="file.js"></script>
+  </body>
+</html>
